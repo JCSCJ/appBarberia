@@ -1,24 +1,19 @@
 <resources>
     <!-- Textos generales -->
     <string name="app_name">BarberShop</string>
-    <string name="login_title">Login</string>
     <string name="Bussines_title">Garza Barber</string>
+    <string name="login_title">Login</string>
+    <string name="register_title">Sign up</string>
     <string name="email_hint">Correo electrónico</string>
     <string name="email">Correo electronico</string>
     <string name="password_hint">Contraseña</string>
     <string name="password">Contrasena</string>
-    <string name="login_button">Iniciar sesion</string>
     <string name="forgot_password">¿Olvidaste tu contraseña?</string>
-    <string name="continue_with_google">Continuar con Google</string>
     <string name="already_have_account">¿Ya tienes una cuenta?</string>
     <string name="login_here">Inicia sesión aquí</string>
     <string name="remember_user">Recordar usuario</string>
-
-    <string name="register_title">Sign up</string>
     <string name="full_name">Nombre completo</string>
     <string name="phone">Teléfono</string>
-    <string name="confirm_password">Confirmar contraseña</string>
-    <string name="register_button">LOGIN</string>
 
     <!-- Placeholders -->
     <string name="full_name_hint">Juan Pérez</string>
@@ -35,8 +30,39 @@
     <string name="email_invalid">Correo electrónico no válido</string>
     <string name="password_required">La contraseña es requerida</string>
     <string name="password_length">Mínimo 6 caracteres</string>
+
+    <!-- Fragments -->
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_dashboard">Favorites</string>
+    <string name="title_notifications">Account</string>
+
+    <!-- Home -->
+    <string name="banner_promo">Promoción especial de barbería</string>
+    <string name="special_offer_desc">OFERTA ESPECIAL</string>
+    <string name="destacables">PRODUCTOS DESTACADOS</string>
+
+    <!-- Categorias de productos -->
+    <string name="categories">CATEGORÍAS</string>
+    <string name="category_maquinillas">Maquinillas</string>
+    <string name="category_tijeras">Tijeras</string>
+    <string name="category_cremas">Cremas</string>
+    <string name="category_afeitadoras">Afeitadoras</string>
+
+
+    <!-- Buttons -->
+    <string name="button_add">Añadir</string>
+    <string name="button_buy_now">COMPRAR AHORA</string>
+    <string name="register_button">LOGIN</string>
+    <string name="continue_with_google">Continuar con Google</string>
+    <string name="login_button">Iniciar sesion</string>
+
+    <!-- Productos -->
+    <string name="product_kit_profesional_barberia">Kit Profesional Barbería</string>
+    <string name="product_tijeras_barber">Tijeras Barber</string>
+    <string name="product_crema_de_afeitar">Crema de Afeitar</string>
+    <string name="product_afeitadora_clasica">Afeitadora Clásica</string>
+    <string name="product_maquina_profesional">Máquina Profesional</string>
+
+
 </resources>

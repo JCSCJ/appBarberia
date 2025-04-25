@@ -11,6 +11,8 @@ import com.example.appbarberia.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
 
+    
+
     private lateinit var binding: ActivityHomeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,4 +34,6 @@ class HomeActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
+
+
 }
