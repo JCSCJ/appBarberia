@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores principales -->
+    <color name="primary_text">#FF000000</color> <!-- Negro puro -->
+    <color name="background_white">#FFFFFF</color> <!-- Blanco puro -->
+    <color name="primary_blue">#FFC7D0D8</color> <!-- Tu azul grisáceo exacto -->
+
+    <!-- Variaciones del azul -->
+    <color name="blue_dark">#FFA5B1BC</color> <!-- 20% más oscuro -->
+    <color name="blue_light">#FFE9EDF1</color> <!-- 20% más claro -->
+
+    <!-- Colores secundarios -->
+    <color name="border_black">#FF000000</color>
+    <color name="hint_color">#FFC7D0D8</color> <!-- Azul para hints -->
+    <color name="icon_color">#FF000000</color>
+</resources>

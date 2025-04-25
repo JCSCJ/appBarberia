@@ -1,0 +1,42 @@
+<resources>
+    <!-- Textos generales -->
+    <string name="app_name">BarberShop</string>
+    <string name="login_title">Login</string>
+    <string name="Bussines_title">Garza Barber</string>
+    <string name="email_hint">Correo electrónico</string>
+    <string name="email">Correo electronico</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="password">Contrasena</string>
+    <string name="login_button">Iniciar sesion</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="continue_with_google">Continuar con Google</string>
+    <string name="already_have_account">¿Ya tienes una cuenta?</string>
+    <string name="login_here">Inicia sesión aquí</string>
+    <string name="remember_user">Recordar usuario</string>
+
+    <string name="register_title">Sign up</string>
+    <string name="full_name">Nombre completo</string>
+    <string name="phone">Teléfono</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="register_button">LOGIN</string>
+
+    <!-- Placeholders -->
+    <string name="full_name_hint">Juan Pérez</string>
+    <string name="email_example">ejemplo@barberia.com</string>
+    <string name="password_example">********</string>
+    <string name="phone_example">+52 55 1234 5678</string>
+
+    <!-- Textos accesibilidad -->
+    <string name="logo_description">Logo de la Barbería</string>
+    <string name="google_icon_description">Icono de Google</string>
+
+    <!-- Validaciones -->
+    <string name="email_required">El correo es requerido</string>
+    <string name="email_invalid">Correo electrónico no válido</string>
+    <string name="password_required">La contraseña es requerida</string>
+    <string name="password_length">Mínimo 6 caracteres</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
