@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
@@ -10,6 +11,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="5dp">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="start"
+                android:contentDescription="@string/title_home"
+                android:src="@drawable/round_apps_24"/>
+
+        </FrameLayout>
 
         <!-- Banner Superior -->
         <ImageView
@@ -22,6 +40,7 @@
 
         <!-- Sección de Categorías -->
         <TextView
+            android:id="@+id/text_home"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/categories"
@@ -58,7 +77,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:contentDescription="@string/category_maquinillas"
-                        android:src="@drawable/ic_razor"
+                        android:src="@drawable/ic_razor_barber"
                         app:tint="#000000" />
 
                     <TextView
@@ -165,7 +184,7 @@
             <!-- Producto -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="250dp"
+                android:layout_height="280dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="4dp"
                 app:cardCornerRadius="8dp"
@@ -179,10 +198,10 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="120dp"
+                        android:layout_height="150dp"
                         android:scaleType="centerCrop"
                         android:contentDescription="@string/product_maquina_profesional"
-                        android:src="@drawable/product1"
+                        android:src="@drawable/barber_professional_machine"
                         android:background="#C7D0D8"/>
 
                     <TextView
@@ -196,26 +215,28 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="$129.99"
-                        android:textColor="#C7D0D8"
+                        android:text="@string/price_professional_machine"
+                        android:textColor="#000000"
                         android:textSize="16sp"
                         android:textStyle="bold"
                         android:layout_marginTop="4dp"/>
 
                     <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="36dp"
+                        android:layout_width="320dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/primary_blue"
                         android:text="@string/button_add"
-                        android:textColor="#FFFFFF"
-                        android:background="#000000"
-                        android:layout_marginTop="8dp"/>
+                        android:textColor="#000000"
+                        tools:ignore="DuplicateSpeakableTextCheck" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <!-- Producto -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="250dp"
+                android:layout_height="280dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="4dp"
                 app:cardCornerRadius="8dp"
@@ -229,10 +250,10 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="120dp"
+                        android:layout_height="150dp"
                         android:scaleType="centerCrop"
                         android:contentDescription="@string/product_tijeras_barber"
-                        android:src="@drawable/product2"
+                        android:src="@drawable/barber_scissors"
                         android:background="#C7D0D8"/>
 
                     <TextView
@@ -246,26 +267,27 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="$89.99"
-                        android:textColor="#C7D0D8"
+                        android:text="@string/price_barber_scissors"
+                        android:textColor="#000000"
                         android:textSize="16sp"
                         android:textStyle="bold"
                         android:layout_marginTop="4dp"/>
 
                     <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="36dp"
+                        android:layout_width="320dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="48dp"
                         android:text="@string/button_add"
-                        android:textColor="#FFFFFF"
-                        android:background="#000000"
-                        android:layout_marginTop="8dp"/>
+                        android:textColor="#000000"
+                        android:background="@color/primary_blue"
+                        android:layout_marginTop="4dp"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <!-- Producto -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="250dp"
+                android:layout_height="280dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="4dp"
                 app:cardCornerRadius="8dp"
@@ -279,10 +301,10 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="120dp"
+                        android:layout_height="150dp"
                         android:scaleType="centerCrop"
                         android:contentDescription="@string/product_crema_de_afeitar"
-                        android:src="@drawable/product3"
+                        android:src="@drawable/shave_cream"
                         android:background="#C7D0D8"/>
 
                     <TextView
@@ -296,26 +318,27 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="$24.99"
-                        android:textColor="#C7D0D8"
+                        android:text="@string/price_cream_shave"
+                        android:textColor="#000000"
                         android:textSize="16sp"
                         android:textStyle="bold"
                         android:layout_marginTop="4dp"/>
 
                     <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="36dp"
+                        android:layout_width="320dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="48dp"
                         android:text="@string/button_add"
-                        android:textColor="#FFFFFF"
+                        android:textColor="#000000"
                         android:background="#000000"
-                        android:layout_marginTop="8dp"/>
+                        android:layout_marginTop="4dp"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <!-- Producto -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="250dp"
+                android:layout_height="280dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="4dp"
                 app:cardCornerRadius="8dp"
@@ -329,10 +352,10 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="120dp"
+                        android:layout_height="150dp"
                         android:scaleType="centerCrop"
                         android:contentDescription="@string/product_afeitadora_clasica"
-                        android:src="@drawable/product4"
+                        android:src="@drawable/classic_shave"
                         android:background="#C7D0D8"/>
 
                     <TextView
@@ -346,19 +369,20 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="$49.99"
-                        android:textColor="#C7D0D8"
+                        android:text="@string/price_classic_shave"
+                        android:textColor="#000000"
                         android:textSize="16sp"
                         android:textStyle="bold"
                         android:layout_marginTop="4dp"/>
 
                     <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="36dp"
+                        android:layout_width="320dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="48dp"
                         android:text="@string/button_add"
-                        android:textColor="#FFFFFF"
+                        android:textColor="#000000"
                         android:background="#000000"
-                        android:layout_marginTop="8dp"/>
+                        android:layout_marginTop="4dp"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </GridLayout>
@@ -377,7 +401,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="220dp"
             android:layout_marginHorizontal="16dp"
             android:layout_marginBottom="24dp"
             app:cardCornerRadius="12dp"
@@ -392,7 +416,7 @@
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
                     android:contentDescription="@string/product_kit_profesional_barberia"
-                    android:src="@drawable/special_offer"
+                    android:src="@drawable/professional_barber_kit"
                     android:background="#C7D0D8"/>
 
                 <LinearLayout
@@ -414,8 +438,8 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="$159.99 (30% OFF)"
-                        android:textColor="#C7D0D8"
+                        android:text="@string/price_professional_kit_offer"
+                        android:textColor="#FFFFFF"
                         android:textSize="20sp"
                         android:textStyle="bold"
                         android:layout_marginTop="4dp"/>
@@ -424,7 +448,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="36dp"
                         android:text="@string/button_buy_now"
-                        android:textColor="#FFFFFF"
+                        android:textColor="#000000"
                         android:background="#C7D0D8"
                         android:layout_marginTop="8dp"
                         android:paddingHorizontal="16dp"/>

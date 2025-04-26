@@ -34,7 +34,7 @@
     <!-- Fragments -->
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Favorites</string>
+    <string name="title_dashboard">Cart</string>
     <string name="title_notifications">Account</string>
 
     <!-- Home -->
@@ -53,9 +53,11 @@
     <!-- Buttons -->
     <string name="button_add">Añadir</string>
     <string name="button_buy_now">COMPRAR AHORA</string>
-    <string name="register_button">LOGIN</string>
+    <string name="register_button">Registrarse</string>
     <string name="continue_with_google">Continuar con Google</string>
+    <string name="create_account">Crear cuenta</string>
     <string name="login_button">Iniciar sesion</string>
+    <string name="shopping_cart">shopping_cart</string>
 
     <!-- Productos -->
     <string name="product_kit_profesional_barberia">Kit Profesional Barbería</string>
@@ -64,5 +66,13 @@
     <string name="product_afeitadora_clasica">Afeitadora Clásica</string>
     <string name="product_maquina_profesional">Máquina Profesional</string>
 
+    <!-- Precios -->
+    <string name="price_cream_shave">$24.99</string>
+    <string name="price_barber_scissors">$89.99</string>
+    <string name="price_professional_machine">$129.99</string>
+    <string name="price_classic_shave">$49.99</string>
+    <string name="price_professional_kit_offer">$159.99 (30% OFF)</string>
+
+    <!-- Carrito -->
 
 </resources>
