@@ -28,7 +28,8 @@
         android:textSize="50sp"
         android:textStyle="bold"
         android:gravity="center"
-        android:layout_marginBottom="26dp"/>
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"/>
 
     <!-- Campo de nombre completo -->
     <TextView
@@ -121,8 +122,9 @@
         android:id="@+id/btnRegister"
         android:layout_width="320dp"
         android:layout_height="48dp"
+        android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:text="@string/register_button"
+        android:text="@string/create_account"
         android:textColor="#000000"
         android:textSize="16sp"
         android:background="@drawable/button_primary"
@@ -143,7 +145,7 @@
             android:textSize="16sp"/>
 
         <TextView
-            android:id="@+id/tvLoginHere"
+            android:id="@+id/tvLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/login_here"

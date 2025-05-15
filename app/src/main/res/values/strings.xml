@@ -53,7 +53,6 @@
     <!-- Buttons -->
     <string name="button_add">Añadir</string>
     <string name="button_buy_now">COMPRAR AHORA</string>
-    <string name="register_button">Registrarse</string>
     <string name="continue_with_google">Continuar con Google</string>
     <string name="create_account">Crear cuenta</string>
     <string name="login_button">Iniciar sesion</string>
