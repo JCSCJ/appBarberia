@@ -5,21 +5,25 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/navigation_home">
 
+    <!-- Fragmento Home -->
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.appbarberia.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
+    <!-- Fragmento Carrito (corregido) -->
     <fragment
         android:id="@+id/navigation_cart"
-        android:name="com.example.appbarberia.ui.dashboard.DashboardFragment"
+        android:name="com.example.appbarberia.ui.carrito.CarritoFragment"
         android:label="@string/title_cart"
-        tools:layout="@layout/fragment_cart" />
+        tools:layout="@layout/fragment_carrito" />
 
+    <!-- Fragmento Cuenta -->
     <fragment
         android:id="@+id/navigation_account"
         android:name="com.example.appbarberia.ui.notifications.NotificationsFragment"
         android:label="@string/title_account"
         tools:layout="@layout/fragment_account" />
+
 </navigation>
