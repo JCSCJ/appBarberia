@@ -5,39 +5,39 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".RegisterActivity"
-    android:padding="40dp">
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context=".RegisterActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="start"
         android:text="@string/Bussines_title"
         android:textColor="#000000"
         android:textSize="30sp"
-        android:textStyle="bold"
-        android:gravity="start"/>
+        android:textStyle="bold" />
 
     <!-- Título -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
         android:text="@string/register_title"
         android:textColor="#000000"
         android:textSize="50sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginBottom="32dp"
-        android:layout_marginTop="32dp"/>
+        android:textStyle="bold" />
 
     <!-- Campo de nombre completo -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
         android:text="@string/full_name"
-        android:textColor="#000000"
-        android:layout_marginBottom="4dp"/>
+        android:textColor="#000000" />
 
     <EditText
         android:id="@+id/etFullName"
@@ -48,17 +48,17 @@
         android:background="@drawable/edittext_border"
         android:hint="@string/full_name_hint"
         android:inputType="textPersonName"
+        android:padding="12dp"
         android:textColor="#000000"
-        android:textColorHint="#C7D0D8"
-        android:padding="12dp"/>
+        android:textColorHint="#C7D0D8" />
 
     <!-- Campo de teléfono -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
         android:text="@string/phone"
-        android:textColor="#000000"
-        android:layout_marginBottom="4dp"/>
+        android:textColor="#000000" />
 
     <EditText
         android:id="@+id/etPhone"
@@ -69,17 +69,17 @@
         android:background="@drawable/edittext_border"
         android:hint="@string/phone_example"
         android:inputType="phone"
+        android:padding="12dp"
         android:textColor="#000000"
-        android:textColorHint="#C7D0D8"
-        android:padding="12dp"/>
+        android:textColorHint="#C7D0D8" />
 
     <!-- Campo de email -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
         android:text="@string/email"
-        android:textColor="#000000"
-        android:layout_marginBottom="4dp"/>
+        android:textColor="#000000" />
 
     <EditText
         android:id="@+id/etEmail"
@@ -90,19 +90,18 @@
         android:background="@drawable/edittext_border"
         android:hint="@string/email_example"
         android:inputType="textEmailAddress"
+        android:padding="12dp"
         android:textColor="#000000"
-        android:textColorHint="#C7D0D8"
-        android:padding="12dp"/>
-
+        android:textColorHint="#C7D0D8" />
 
 
     <!-- Campo de contraseña -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
         android:text="@string/password"
-        android:textColor="#000000"
-        android:layout_marginBottom="4dp"/>
+        android:textColor="#000000" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -113,9 +112,9 @@
         android:background="@drawable/edittext_border"
         android:hint="@string/password_hint"
         android:inputType="textPassword"
+        android:padding="12dp"
         android:textColor="#000000"
-        android:textColorHint="#C7D0D8"
-        android:padding="12dp"/>
+        android:textColorHint="#C7D0D8" />
 
     <!-- Botón de registro -->
     <Button
@@ -124,34 +123,34 @@
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
+        android:background="@drawable/button_primary"
+        android:backgroundTint="@color/primary_blue"
         android:text="@string/create_account"
         android:textColor="#000000"
-        android:textSize="16sp"
-        android:background="@drawable/button_primary"
-        android:backgroundTint="@null"/>
+        android:textSize="16sp" />
 
     <!-- Texto para login -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/already_have_account"
             android:textColor="#000000"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/tvLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
             android:text="@string/login_here"
             android:textColor="#000000"
-            android:textStyle="bold"
             android:textSize="16sp"
-            android:layout_marginStart="4dp"/>
+            android:textStyle="bold" />
     </LinearLayout>
 </LinearLayout>
