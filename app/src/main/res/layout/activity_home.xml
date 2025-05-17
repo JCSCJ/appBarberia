@@ -31,4 +31,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/mobile_navigation" />
 
+    <!-- Botón flotante para abrir el mapa -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnVerMapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Ver Mapa"
+        android:src="@android:drawable/ic_menu_mapmode"
+        app:layout_constraintBottom_toTopOf="@id/nav_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        app:tint="@android:color/white"
+        app:backgroundTint="@android:color/holo_blue_dark" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
