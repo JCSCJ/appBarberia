@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
     android:padding="40dp"
     tools:context=".RegisterActivity">
 
     <TextView
+        android:id="@+id/tvBrand"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="start"
         android:text="@string/Bussines_title"
         android:textColor="#000000"
         android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:gravity="start"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        />
 
     <!-- Título -->
     <TextView
+        android:id="@+id/tvSignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -29,36 +36,62 @@
         android:text="@string/register_title"
         android:textColor="#000000"
         android:textSize="50sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvBrand"
+        app:layout_constraintBottom_toTopOf="@id/tvFullname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
     <!-- Campo de nombre completo -->
     <TextView
+        android:id="@+id/tvFullname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
         android:text="@string/full_name"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tvSignUp"
+        app:layout_constraintBottom_toTopOf="@id/etFullName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        />
 
     <EditText
         android:id="@+id/etFullName"
         android:layout_width="320dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="6dp"
         android:autofillHints="name"
         android:background="@drawable/edittext_border"
         android:hint="@string/full_name_hint"
         android:inputType="textPersonName"
         android:padding="12dp"
         android:textColor="#000000"
-        android:textColorHint="#C7D0D8" />
+        android:textColorHint="#C7D0D8"
+        app:layout_constraintTop_toBottomOf="@id/tvFullname"
+        app:layout_constraintBottom_toTopOf="@id/tvPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
     <!-- Campo de teléfono -->
     <TextView
+        android:id="@+id/tvPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
         android:text="@string/phone"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/etFullName"
+        app:layout_constraintBottom_toTopOf="@id/etPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        />
 
     <EditText
         android:id="@+id/etPhone"
@@ -71,15 +104,28 @@
         android:inputType="phone"
         android:padding="12dp"
         android:textColor="#000000"
-        android:textColorHint="#C7D0D8" />
+        android:textColorHint="#C7D0D8"
+        app:layout_constraintTop_toBottomOf="@id/tvPhone"
+        app:layout_constraintBottom_toTopOf="@id/tvEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
     <!-- Campo de email -->
     <TextView
+        android:id="@+id/tvEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
         android:text="@string/email"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/etPhone"
+        app:layout_constraintBottom_toTopOf="@id/etEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        />
 
     <EditText
         android:id="@+id/etEmail"
@@ -92,16 +138,29 @@
         android:inputType="textEmailAddress"
         android:padding="12dp"
         android:textColor="#000000"
-        android:textColorHint="#C7D0D8" />
+        android:textColorHint="#C7D0D8"
+        app:layout_constraintTop_toBottomOf="@id/tvEmail"
+        app:layout_constraintBottom_toTopOf="@id/tvPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
 
     <!-- Campo de contraseña -->
     <TextView
+        android:id="@+id/tvPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
         android:text="@string/password"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/etEmail"
+        app:layout_constraintBottom_toTopOf="@id/etPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        />
 
     <EditText
         android:id="@+id/etPassword"
@@ -114,7 +173,12 @@
         android:inputType="textPassword"
         android:padding="12dp"
         android:textColor="#000000"
-        android:textColorHint="#C7D0D8" />
+        android:textColorHint="#C7D0D8"
+        app:layout_constraintTop_toBottomOf="@id/tvPassword"
+        app:layout_constraintBottom_toTopOf="@id/btnRegister"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
     <!-- Botón de registro -->
     <Button
@@ -127,14 +191,24 @@
         android:backgroundTint="@color/primary_blue"
         android:text="@string/create_account"
         android:textColor="#000000"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/etPassword"
+        app:layout_constraintBottom_toTopOf="@id/llLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <!-- Texto para login -->
     <LinearLayout
+        android:id="@+id/llLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/btnRegister"
+        app:layout_constraintBottom_toTopOf="@id/llLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
 
         <TextView
             android:layout_width="wrap_content"
@@ -153,4 +227,4 @@
             android:textSize="16sp"
             android:textStyle="bold" />
     </LinearLayout>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

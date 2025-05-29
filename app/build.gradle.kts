@@ -43,8 +43,6 @@ android {
 
 dependencies {
 
-    implementation("com.google.firebase:firebase-auth")
-    implementation(platform("com.google.firebase:firebase-bom:33.13.0"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -57,6 +55,10 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    //autenticacion
+    implementation("com.google.firebase:firebase-auth")
+    implementation(platform("com.google.firebase:firebase-bom:33.13.0"))
 
     // Google Maps y ubicación
     implementation("com.google.android.gms:play-services-maps:18.2.0")
