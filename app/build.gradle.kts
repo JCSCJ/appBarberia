@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     id("com.google.gms.google-services")
 
+
 }
 
 android {
@@ -57,8 +58,10 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     //autenticacion
-    implementation("com.google.firebase:firebase-auth")
-    implementation(platform("com.google.firebase:firebase-bom:33.13.0"))
+    implementation(libs.firebase.auth)
+    implementation(platform(libs.firebase.bom))
+    implementation (libs.play.services.auth)
+
 
     // Google Maps y ubicación
     implementation("com.google.android.gms:play-services-maps:18.2.0")
@@ -66,3 +69,6 @@ dependencies {
 
 
 }
+
+
+

@@ -12,7 +12,20 @@
           "package_name": "com.example.appbarberia"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "30572254767-f7dsf8hb9hii81n1aoeann0oikgo6119.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appbarberia",
+            "certificate_hash": "f4e01e8e7e51abe4bc1d088d3627cf28c9debf9b"
+          }
+        },
+        {
+          "client_id": "30572254767-4fo9mmvg65qrev35c18ifmjkd8dgc9su.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDJZ7_Kv-Fken1-zBFI2UuIFZZ6GZlzkbA"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "30572254767-4fo9mmvg65qrev35c18ifmjkd8dgc9su.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
