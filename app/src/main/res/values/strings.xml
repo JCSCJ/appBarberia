@@ -73,8 +73,25 @@
     <string name="price_professional_kit_offer">$159.99 (30% OFF)</string>
 
     <!-- Carrito -->
-
-
-
     <string name="default_web_client_id">default_web_client_id</string>
+    <string name="cart_clear">Vaciar Carrito</string>
+    <string name="cart_total">Total: $5.00</string>
+    <string name="cart_shipping">Envío: $5.00</string>
+    <string name="cart_subtotal">Subtotal: $0.00</string>
+    <string name="cart_name">Carrito de Compras</string>
+
+    <!-- Item -->
+    <string name="item_add">Agregar</string>
+    <string name="item_price">$0.00</string>
+    <string name="item_name">Nombre del producto</string>
+    <string name="account_name">Nombre de Usuario</string>
+    <string name="account_edit">Editar perfil</string>
+    <string name="account_orders">Mis pedidos</string>
+    <string name="account_exit">Cerrar sesión</string>
+    <string name="account_shops">Tiendas</string>
+    <string name="map_show">Ver Mapa</string>
+
+    <!-- Cuenta -->
+
+
 </resources>

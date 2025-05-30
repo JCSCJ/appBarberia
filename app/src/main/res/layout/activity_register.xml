@@ -7,7 +7,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="40dp"
-    tools:context=".RegisterActivity">
+    tools:context=".RegisterActivity"
+    android:background="@drawable/background"
+
+    >
 
     <TextView
         android:id="@+id/tvBrand"
@@ -17,12 +20,12 @@
         android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:gravity="start"
+        android:gravity="center"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:paddingStart="40dp"
-        android:paddingEnd="40dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="60dp"
         />
 
     <!-- Título -->
@@ -36,7 +39,6 @@
         android:text="@string/register_title"
         android:textColor="#000000"
         android:textSize="50sp"
-        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/tvBrand"
         app:layout_constraintBottom_toTopOf="@id/tvFullname"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,11 +73,11 @@
         android:padding="12dp"
         android:textColor="#000000"
         android:textColorHint="#C7D0D8"
-        app:layout_constraintTop_toBottomOf="@id/tvFullname"
         app:layout_constraintBottom_toTopOf="@id/tvPhone"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvFullname"
+        tools:ignore="TextContrastCheck" />
 
     <!-- Campo de teléfono -->
     <TextView
@@ -105,11 +107,11 @@
         android:padding="12dp"
         android:textColor="#000000"
         android:textColorHint="#C7D0D8"
-        app:layout_constraintTop_toBottomOf="@id/tvPhone"
         app:layout_constraintBottom_toTopOf="@id/tvEmail"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPhone"
+        tools:ignore="TextContrastCheck" />
 
     <!-- Campo de email -->
     <TextView
@@ -139,11 +141,11 @@
         android:padding="12dp"
         android:textColor="#000000"
         android:textColorHint="#C7D0D8"
-        app:layout_constraintTop_toBottomOf="@id/tvEmail"
         app:layout_constraintBottom_toTopOf="@id/tvPassword"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEmail"
+        tools:ignore="TextContrastCheck" />
 
 
     <!-- Campo de contraseña -->
@@ -174,11 +176,11 @@
         android:padding="12dp"
         android:textColor="#000000"
         android:textColorHint="#C7D0D8"
-        app:layout_constraintTop_toBottomOf="@id/tvPassword"
         app:layout_constraintBottom_toTopOf="@id/btnRegister"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPassword"
+        tools:ignore="TextContrastCheck" />
 
     <!-- Botón de registro -->
     <Button
@@ -186,7 +188,7 @@
         android:layout_width="320dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="26dp"
         android:background="@drawable/button_primary"
         android:backgroundTint="@color/primary_blue"
         android:text="@string/create_account"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@color/blue_light"
     android:fillViewport="true">
 
     <LinearLayout
@@ -12,56 +12,55 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Encabezado -->
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp"
-            android:paddingTop="5dp">
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_gravity="start"
-                android:contentDescription="@string/title_home"
-                android:src="@drawable/round_apps_24" />
-        </FrameLayout>
-
         <!-- Banner -->
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/banner_home"
+            android:background="#C7D0D8"
             android:contentDescription="@string/banner_promo"
-            android:background="#C7D0D8" />
+            android:scaleType="centerCrop"
+            android:src="@drawable/banner_home" />
 
         <!-- Categorías -->
+
         <!-- ... Sección de categorías no editada por claridad ... -->
 
         <!-- Título Destacados -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
             android:text="@string/destacables"
             android:textColor="#000000"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginStart="16dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="16dp" />
+            android:textStyle="bold" />
 
-        <!-- RecyclerView de productos -->
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:nestedScrollingEnabled="false"
-            tools:listitem="@layout/item_producto" />
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <!-- RecyclerView de productos -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:nestedScrollingEnabled="false"
+                tools:listitem="@layout/item_producto" />
+            <!-- RecyclerView de productos -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewSecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp"
+                android:nestedScrollingEnabled="false"
+                tools:listitem="@layout/item_producto" />
 
-        <!-- Oferta Especial (mantén esta sección si la tienes después) -->
-        <!-- ... -->
+        </LinearLayout>
+
+
     </LinearLayout>
 </ScrollView>

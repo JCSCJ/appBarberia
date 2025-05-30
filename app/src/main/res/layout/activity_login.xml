@@ -8,12 +8,14 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:padding="40dp"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:background="@drawable/background"
+    >
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="start"
+        android:gravity="center"
         android:text="@string/Bussines_title"
         android:textColor="#000000"
         android:textSize="30sp"
@@ -23,11 +25,13 @@
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"
+        android:padding="18dp"
         android:contentDescription="@string/logo_description"
         android:src="@drawable/logo_barberia"
-        app:tint="#000000" />
+        app:tint="#000000"
+        android:background="@drawable/edittext_border"
+        />
 
     <!-- Título -->
     <TextView
@@ -38,7 +42,7 @@
         android:text="@string/login_title"
         android:textColor="#000000"
         android:textSize="50sp"
-        android:textStyle="bold" />
+        />
 
     <!-- Campo de email -->
     <TextView
@@ -59,7 +63,8 @@
         android:inputType="textEmailAddress"
         android:padding="12dp"
         android:textColor="#000000"
-        android:textColorHint="@color/hint_color" />
+        android:textColorHint="@color/hint_color"
+        tools:ignore="TextContrastCheck" />
 
     <!-- Campo de contraseña -->
     <TextView
@@ -80,7 +85,8 @@
         android:inputType="textPassword"
         android:padding="12dp"
         android:textColor="#000000"
-        android:textColorHint="@color/hint_color" />
+        android:textColorHint="@color/hint_color"
+        tools:ignore="TextContrastCheck" />
 
     <!-- Olvidé mi contraseña -->
 
@@ -95,8 +101,8 @@
             android:id="@+id/RememberUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:buttonTint="#C7D0D8"
-            android:checked="true"
+            android:buttonTint="@color/blue_light"
+            android:checked="false"
             android:text="@string/remember_user"
             android:textColor="#000000" />
 
