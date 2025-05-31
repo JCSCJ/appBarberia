@@ -60,7 +60,7 @@ dependencies {
     //autenticacion
     implementation(libs.firebase.auth)
     implementation(platform(libs.firebase.bom))
-    implementation (libs.play.services.auth)
+    implementation(libs.play.services.auth)
 
 
     // Google Maps y ubicación
@@ -68,11 +68,10 @@ dependencies {
     implementation("com.google.android.gms:play-services-location:21.0.1")
 
     //Camara
-    implementation ("com.google.firebase:firebase-storage-ktx:20.3.0")
-    implementation ("com.google.firebase:firebase-firestore-ktx:24.10.0")
-    implementation ("com.github.bumptech.glide:glide:4.15.1")
-    annotationProcessor ("com.github.bumptech.glide:compiler:4.15.1")
-
+    implementation("com.google.firebase:firebase-storage-ktx:21.0.2")
+    implementation("com.google.firebase:firebase-firestore-ktx:25.1.4")
+    implementation(libs.glide)
+    annotationProcessor(libs.compiler)
 
 
 }

@@ -32,7 +32,6 @@ class NotificationsFragment : Fragment() {
 
     private var photoUri: Uri? = null
 
-    // Contracts para permisos y selección de imágenes
     private val pickImageLauncher =
         registerForActivityResult(ActivityResultContracts.GetContent()) { uri ->
             uri?.let { subirImagenAFirebase(it) }

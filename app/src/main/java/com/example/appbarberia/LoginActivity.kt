@@ -22,7 +22,7 @@ class LoginActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
     private lateinit var oneTapClient: SignInClient
-    private val reqOneTap  = 2
+    private val reqOneTap = 2
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -85,7 +85,7 @@ class LoginActivity : AppCompatActivity() {
                     try {
                         startIntentSenderForResult(
                             result.pendingIntent.intentSender,
-                            reqOneTap ,
+                            reqOneTap,
                             null,
                             0,
                             0,
@@ -113,7 +113,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
-        if (requestCode == reqOneTap ) {
+        if (requestCode == reqOneTap) {
             try {
                 val credential = oneTapClient.getSignInCredentialFromIntent(data)
                 val idToken = credential.googleIdToken
