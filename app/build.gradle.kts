@@ -68,8 +68,8 @@ dependencies {
     implementation("com.google.android.gms:play-services-location:21.0.1")
 
     //Camara
-    implementation("com.google.firebase:firebase-storage-ktx:21.0.2")
-    implementation("com.google.firebase:firebase-firestore-ktx:25.1.4")
+    implementation(libs.firebase.storage.ktx)
+    implementation(libs.firebase.firestore.ktx)
     implementation(libs.glide)
     annotationProcessor(libs.compiler)
 
